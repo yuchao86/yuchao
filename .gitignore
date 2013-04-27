@@ -1,0 +1,11 @@
+_Store
+.idea
+simpleCaseTest.php
+report
+*.o
+*~
+*.swp
+*.swo
+*.dSYM
+a.out
+tags
