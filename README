@@ -1,0 +1,6 @@
+export HISTTIMEFORMAT='%F %T '
+export HISTSIZE=450
+export HISTFILESIZE=450
+export HISTFILE=/root/.commandline_warrior
+export HISTCONTROL=ignoredups
+export HISTIGNORE="pwd:ls:ls -ltr:"
