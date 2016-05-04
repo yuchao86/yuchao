@@ -12,13 +12,13 @@
 
 
 [user]
-  name = chao-yu
-  email =chao.yu@gree.co.jp
+  name = yuchao
+  email =yuchao86@gmail.com
 
 
 [core]
   pager = lv -c
-  excludesfile = /home/chao-yu/.gitignore
+  excludesfile = /home/yuchao/.gitignore
   quotepath = false
 
 
