@@ -1,13 +1,13 @@
 var mysql = require('mysql');
 
-var TEST_DATABASE = 'dev2_p2p';
+var TEST_DATABASE = '***';
 var TEST_TABLE = 'loginuser';
 
 //创建连接
 var client = mysql.createConnection({
   host: '101.201.152.200',
   user: 'root',
-  password: 'yrSuper001',
+  password: '***',
 });
 
 client.connect();
