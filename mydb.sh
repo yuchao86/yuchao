@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mysql -hlocalhost -uroot -pyrSuper001
+mysql -hlocalhost -uroot -p*****
