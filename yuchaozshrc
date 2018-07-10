@@ -17,7 +17,7 @@ ZSH_THEME="random"
 ZSH_THEME="geoffgarside"
 ZSH_THEME="dst"
 
-ZSH_THEME="xiong-chiamiov-plus"
+#ZSH_THEME="xiong-chiamiov-plus"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -91,28 +91,68 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #export JAVA_HOME=/Library/Java/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
 export M2_HOME=/Users/yuchao/Downloads/Platform/mvn
-export ANT_HOME=/Users/yuchao/Downloads/Platform/apache-ant-1.9.6
+export ANT_HOME=/Users/yuchao/Downloads/Platform/ant
 
-export GOPATH=/usr/local/opt/go
+export GOROOT=/usr/local/go
+export GOPATH=/Users/yuchao/go
 
 export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
 
-export MYPATH=/Users/yuchao/Shell/bin
-export GRADLE_HOME=/Users/yuchao/Downloads/Platform/gradle-2.8
+export MYPATH=/Users/yuchao/Shell/bin:/Users/yuchao/Qt5.7.0/5.7/clang_64/bin
+export GRADLE_HOME=/Users/yuchao/Downloads/Platform/gradle
 export ANDROID_HOME=/Users/yuchao/Library/Android/sdk
+export RABBITMQ_HOME=/Users/yuchao/Downloads/Platform/rabbitmq
+
+export COMPOSER_PATH=/Users/yuchao/.composer/vendor
 
 export NVM_DIR="/Users/yuchao/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export AVR_PATH="/usr/local/CrossPack-AVR"
-export PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin:$MYPATH:$GRADLE_HOME/bin:$ANDROID_HOME/bin:$GOBIN:$ANDROID_HOME/platform-tools:$ANT_HOME/bin:$GOPATH/bin:$AVR_PATH/bin:$ANDROID_HOME/tools
+#export AVR_PATH="/usr/local/CrossPack-AVR"
+export AVR_PATH="/Users/yuchao/Lab"
+export PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin:$MYPATH:$GRADLE_HOME/bin:$RABBITMQ_HOME/bin:$ANDROID_HOME/bin:$GOBIN:$ANDROID_HOME/platform-tools:$ANT_HOME/bin:$GOROOT/bin:$AVR_PATH/bin:$ANDROID_HOME/tools:$COMPOSER_PATH/bin
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.composer/vendor/bin" # Add Composer to PATH for scripting
+export PATH=$PATH:/Users/yuchao/.cache/rebar3/bin
+export PATH=$PATH:$GOPATH/bin
 
 export C_INCLUDE_PATH=.:/usr/local/include:$AVR_PATH/include
-export LIBRARY_PATH=.:/usr/local/lib:$AVR_PATH/lib
-export HOMEBREW_GITHUB_API_TOKEN=d65124075bc86c9741b8a0f0c83dbfc33a030611
+#export LIBRARY_PATH=.:/usr/local/lib:$AVR_PATH/lib
+export LD_LIBRARY_PATH=/usr/lib
+export LD_LIBRARY_PATH=.:/usr/local/lib:$LD_LIBRARY_PATH
+export HOMEBREW_GITHUB_API_TOKEN=01bb2ae83d156572ac27c7151f02de88584ca9fc
 
-alias vm="ssh vagrant@127.0.0.1 -p 2222"
+export ETCDCTL_API=2
+
+export PAGER=most
+export MANWIDTH=80
+
+# ======DEV===========
+#alias vm="ssh vagrant@127.0.0.1 -p 2222"
+alias dev="ssh yuchao@123.56.176.151 -p 22"
+alias rootdev="ssh root@123.56.176.151 -p 22"
+# "======TEST==========="
+alias test0="ssh root@101.201.29.82 -p 22"
+#"======API==========="
+alias api0="ssh rd@101.201.45.115 -p 4344"
+alias api1="ssh rd@101.201.49.187 -p 4344" 
+#"======ELK==========="
+alias  elk="ssh rd@101.201.47.159 -p 4344"  
+#"======ES==========="
+alias  es0="ssh rd@101.201.47.119 -p 4344"
+alias  es1="ssh rd@101.201.28.228 -p 4344"
+alias  es2="ssh rd@101.201.50.210 -p 4344"
+#"======CHAT========="
+alias  chat0="ssh rd@101.201.49.181 -p 4344"
+alias  chat1="ssh rd@101.201.31.117 -p 4344"
+
+export PATH=/usr/local/sbin:$PATH
+export QINIU_ACCESS_KEY=Clah2zC_ZiybAj75ciuz7i2T7Xc4dlgnUzvyQY7J
+export QINIU_SECRET_KEY=9d_K3GLtEddqj2p-DvAcR6jyzdjzWW1gJrpABKYl
+export QINIU_TEST_DOMAIN=oh4szwt05.bkt.clouddn.com
+export PATH="/usr/local/opt/qt/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"

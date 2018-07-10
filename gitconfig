@@ -1,0 +1,57 @@
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%C reset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+    ls = log --stat
+    lp = log -p
+    la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
+
+    log-graph = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Creset%s'
+    log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d%Creset'
+
+    wc = whatchanged
+    oneline = log --pretty=oneline
+    ranking = shortlog -s -n --no-merges
+    edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
+    add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+
+    gn = grep -n
+    feature = flow feature
+    release = flow release
+    hotfix = flow hotfix
+    support = flow support
+
+
+[color]
+    ui = auto 
+    branch = auto 
+    diff = auto 
+    status = auto 
+    interactive = auto
+    grep = auto
+
+[user]
+	email = yuchao86@gmail.com
+	name = YuChao
+
+[core]
+    pager = less -FRSX
+    excludesfile = /home/yuchao/.gitignore
+    quotepath = false
+	editor = vim
+
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+
+[branch "develop"]
+    remote = origin
+    merge = refs/heads/develop
+
+
+
+[merge]
+	tool = vimdiff

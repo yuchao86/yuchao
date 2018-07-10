@@ -1,0 +1,44 @@
+#files
+*.[oa]
+*~
+*.swp
+*.swo
+*.dSYM
+#exclude lib.a user !lib.a
+
+#directory
+a.out
+tags
+report
+log
+tmp
+pid
+
+# Assets
+composer.lock
+composer.phar
+/node_modules
+/vendor
+/storage/debugbar
+
+
+# Homestead
+Homestead.yaml
+Homestead.json
+
+# Environment
+.env
+
+# IDEs
+.idea
+.project
+/.settings
+/nbproject/
+/nbproject/private/
+
+# OS
+.DS_Store
+Thumbs.db
+#files
+*.csv
+simpleCaseTest.php

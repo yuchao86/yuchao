@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -xv
 # A word about this shell script:
 #
 # It must work everywhere, including on systems that lack
