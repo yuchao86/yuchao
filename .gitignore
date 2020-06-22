@@ -1,11 +1,40 @@
-_Store
-.idea
-simpleCaseTest.php
-report
+#files
 *.o
 *~
 *.swp
 *.swo
 *.dSYM
+
+#directory
 a.out
 tags
+report
+
+# Assets
+composer.lock
+composer.phar
+/node_modules
+/vendor
+/storage/debugbar
+
+
+# Homestead
+Homestead.yaml
+Homestead.json
+
+# Environment
+.env
+
+# IDEs
+.idea
+.project
+/.settings
+/nbproject/
+/nbproject/private/
+
+# OS
+.DS_Store
+Thumbs.db
+#files
+*.csv
+simpleCaseTest.php
